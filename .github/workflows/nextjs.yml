@@ -6,6 +6,7 @@ name: Deploy Next.js site to Pages
 
 on:
   # Runs on pushes targeting the default branch
+  #miight no
   push:
     branches: ["main"]
 
@@ -78,7 +79,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./dist
 
   # Deployment job
   deploy:
